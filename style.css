@@ -1,0 +1,300 @@
+/*
+Theme Name: artnex
+Text Domain: artnex
+Version: 1.0
+Description: artnex is an personal nft ecommerce website
+Tags: left-sidebar, responsicve, fancy, design
+Author: salah eddine sabir
+Author URI: www.salaheddinesabir.com
+*/
+@font-face {
+    font-family: "alata var";
+    src: url(http://localhost/wordpress/wp-content/themes/artnex/assets/fonts/alata/Alata-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    width: 87vw;
+    background: rgb(255, 255, 255);
+    font-family: "alata var";
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.section-header-container {
+    height: 44vh;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* HEADER START */
+.header {
+    z-index: 10000;
+    width: 100%;
+    position: relative;
+}
+.navbar-container {
+    width: 87vw;
+    top: 44px;
+    position: relative;
+    border-radius: 22px 22px 22px 22px;
+}
+.navbar {
+    display: flex;
+    padding: 5px 15px 5px 15px;
+    background-color: rgb(255 255 255);
+    color: #000;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-top-connect {
+    top: 0;
+    position: fixed;
+    border-radius: 0px 0px 22px 22px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+    overflow: hidden;
+}
+.nav-links a {
+    color: #000;
+    transition: 150ms;
+}
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: smaller;
+    align-items: center;
+}
+.menu li {
+padding: 5px 14px;
+}
+.menu div li {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    display: flex;
+    background: black;
+    border-radius: 15px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.menu div {
+    font-size: x-large;
+    display: flex;
+    width: 8vw;
+    justify-content: space-around;
+}
+.menu div li a {
+    width: inherit;
+    height: inherit;
+    font-weight: 500;
+    font-size: smaller;
+    color: inherit;
+    transition: 150ms;
+    display: contents;
+}
+.menu li a:hover{
+    color: rgb(204, 204, 204);
+}
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+   /*HAMBURGER MENU*/
+   .menu-hamburger-icon {
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .menu-on .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .menu-on .bar2 {opacity: 0;}
+  
+  .menu-on .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-9px, -7px);
+  }
+
+
+/* RESPONSIVE-MENU */
+.responsive-menu {
+    position: absolute;
+    width: 100%;
+    height: 61vh;
+    top: -61vh;
+    left: 0;
+    background: white;
+    display: none;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    border-radius: 0 0 22px 22px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+    font-weight: 500;
+    font-size: x-large;
+}
+.responsive-menu div {
+    font-size: xxx-large !important;
+    display: flex;
+    width: 41%;
+    justify-content: space-evenly;
+}
+.menu-active {
+    top: 0;
+}
+.responsive-menu ul li a {
+    color: black;
+}
+.responsive-menu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+
+/* FOOTER */
+.footer {
+    height: 39vh;
+    border-radius: 15px 15px 0px 0px;
+    width: inherit;
+    background: #0c0c0c;
+}
+.footer .container {
+    width: inherit;
+    height: inherit;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer .container .top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-links{
+        display: flex;
+        gap: 1em;
+        font-size: smaller;
+        align-items: center;
+}
+.footer-links li{
+    padding: 5px 14px;
+}
+.footer-links li a {
+    width: inherit;
+    height: inherit;
+    font-weight: 500;
+    font-size: smaller;
+    color: white;
+    transition: 150ms;
+    display: contents;
+}
+.footer-links li a:hover{
+    color: rgb(204, 204, 204);
+}
+.bottom-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.copyright-container {
+    color: white;
+    font-size: x-large;
+    cursor: pointer;
+}
+.bottom-links {
+    font-size: xx-large;
+    display: inline-flex;
+    gap: 20px;
+}
+.bottom-links li {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #131313;
+    color: white;
+    transition: 0.2s;
+}
+.bottom-links li:hover{
+    background-color: rgb(207, 207, 207);
+    color: #0c0c0c;
+}
+.bottom-content li a {
+    vertical-align: middle;
+    color: inherit;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    body{
+        width: 100vw;
+    }
+    .section-header-container {
+        font-size: large;
+        text-align: center;
+    }
+    .header{
+        position: sticky;
+        top: 0;
+    }
+    .navbar-container {
+        width: 100%;
+        height: 7vh;
+        top: 0;
+        border-radius: 0px 0px 22px 22px;
+        box-shadow: none;
+    }
+    .navbar {
+        height: inherit;
+        box-shadow: none;
+        position: static;
+    }
+    .menu-hamburger-icon {
+        display: block;
+      }
+    .responsive-menu {
+        display: block;
+    }
+    .menu { 
+            display:none;
+            position: absolute;
+            background-color:teal;
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding: 16px 0;
+    }
+    /* FOOTER */
+    .footer .container .top-content {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .container {
+        padding: 15px;
+    }
+}
